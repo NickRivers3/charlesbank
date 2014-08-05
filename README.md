@@ -1,3 +1,3 @@
-charlesbank
+Charlesbank
 ===========
 Responsive WordPress Theme
