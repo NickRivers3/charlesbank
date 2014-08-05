@@ -1,0 +1,59 @@
+﻿/*
+Widget CSS
+*/
+@charset "utf-8";
+
+/* =================================================================================================
+-- Global Styles
+================================================================================================= */
+#team-sidebar,
+#news-sidebar {
+	background-color:#607181;
+	margin-top:60px;
+	padding-bottom:10px;
+}
+#news-sidebar {
+	background-color:#618c95;
+	margin-top:30px;
+	padding-bottom:10px;
+}
+#strategy-sidebar {
+	background-color:#7e7b52;
+	margin-top:30px;
+	padding-bottom:10px;
+}
+#left-column #case-studies-sidebar,
+#left-column #testimonials-sidebar,
+#left-column #portfolio-sidebar {
+	background-color:#7e6f6a;
+	margin-top:30px;
+	padding-bottom:10px;
+}
+.single-investment #team-sidebar,
+.single-operations #team-sidebar {
+	margin-top:0px;
+}
+.page-investment-team #team-sidebar #menu-operations-team li,
+.page-operations-team #team-sidebar #menu-investment-team li,
+.single-investment #team-sidebar #menu-operations-team li,
+.single-operations #team-sidebar #menu-investment-team li,
+.page-people.page-parent #team-sidebar #menu-operations-team li,
+.page-people.page-parent #team-sidebar #menu-investment-team li {
+	display:none;
+}
+.page-investment-team #team-sidebar #menu-operations-team li.parent,
+.page-operations-team #team-sidebar #menu-investment-team li.parent,
+.single-investment #team-sidebar #menu-operations-team li.parent,
+.single-operations #team-sidebar #menu-investment-team li.parent,
+.page-people.page-parent #team-sidebar #menu-operations-team li.parent,
+.page-people.page-parent #team-sidebar #menu-investment-team li.parent {
+	display:block;
+}
+.page-investment-team #team-sidebar #menu-operations-team.menu,
+.page-operations-team #team-sidebar #menu-investment-team.menu,
+.single-investment #team-sidebar #menu-operations-team.menu,
+.single-operations #team-sidebar #menu-investment-team.menu,
+.page-people.page-parent #team-sidebar #menu-operations-team.menu,
+.page-people.page-parent #team-sidebar #menu-investment-team.menu {
+	padding-bottom:0px;
+}

@@ -1,0 +1,53 @@
+/*
+IE-Styles CSS
+*/
+@charset "utf-8";
+
+/* =================================================================================================
+-- Global Styles
+================================================================================================= */
+#portfolio-article section,
+#case-studies-article section,
+.portfolio-top,
+.portfolio-bottom {width:100%;}
+
+#portfolio-article section .portfolio-details {width:347px;}
+ul.next-back,
+#main-content {padding-bottom:20px!important;}
+#menu-portfolio {position:relative;}
+#main-content section {width:100%;}
+
+/* Sidebar Menu */
+.sidebar-container ul.menu .sub-menu li.menu-item {position:relative;left:0px;}
+#news-sidebar ul li {position:relative;left:10px;}
+#news-sidebar ul li .sub-menu li.menu-item,
+#news-sidebar ul li ul.menu li {position:relative;left:0px;}
+#menu-investment-team,
+#menu-operations-team,
+#menu-strategy,
+#menu-portfolio,
+#menu-investment {position:relative;left:10px;}
+#menu-investment-team li.menu-item,
+#menu-operations-team li.menu-item {left:0px!important;}
+ul#menu-recent-releases li.recent-releases,
+ul#menu-recent-releases li.archive-recent-releases {padding-bottom:10px;margin-bottom:0px!important;}
+ul#menu-investment-team li.investment-team,
+ul#menu-operations-team li.operations-team {padding-bottom:10px;margin-bottom:0px;}
+
+/* Portfolio Slider */
+#portfolio-slider {left:20px;}
+section.news-item {width:450px;}
+
+/* Page Nav / Back and Next */
+#page-nav {margin:0px;padding:10px!important;}
+
+/* People Gallery */
+#investement-team,
+#operations-team {width:740px;padding-bottom:10px;}
+section.team-item,
+a.team-thumbnail,
+.team-item-wrapper {width:136px!important;}
+.showMember {opacity:1!important;filter:alpha(opacity=100)!important; zoom: 1;}
+
+/* Testimonial */
+#testimonial-clients section {width:650px!important;}

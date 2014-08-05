@@ -1,0 +1,655 @@
+﻿/*
+Navigation CSS
+*/
+@charset "utf-8";
+
+/* =================================================================================================
+-- Global Styles
+================================================================================================= */
+.menu {list-style:none;padding:0px;margin:0px;position:relative;}
+#main-menu {margin:20px 0px;position:relative;}
+.sidebar-container .sidebar-wrapper ul.menu {
+	width:180px;	
+	margin:0px 10px;
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+	padding-bottom:10px;
+	margin-bottom:15px;
+}
+a {text-decoration: none;color: #006699;}
+a:hover {color: #0091d4;}
+.entry-content a {color:#006699;}
+.showMenuItem a {background-color:#333333;}
+.readmore {
+	display: block;
+	color: #006699;
+	background-image:url('../images/buttons/blue-arrow-next.png');
+	background-repeat:no-repeat;
+	background-position: center right;
+	padding-right: 15px;
+	margin: 10px 0px;
+	clear: both;
+	width: 65px;
+	font-size:12px;
+}
+.readmore:hover {color:#0091d4;}
+.news-item .readmore {display: inline-block;clear: none;margin: 0px;}
+.page-contact-us .entry-content a {color: #006699;text-decoration: none;}
+.news-link {display:block;color: #006699;}
+a.case-studies-link {color: #333;}
+a.case-studies-link:hover {color:#0091d4;}
+a.case-studies-thumbnail-link {
+	display: block;
+	float: left;
+	width: 210px;
+	margin-right: 10px;
+	border: 1px solid #666;
+}
+a.case-studies-thumbnail-link:hover {border: 1px solid #0099FF;}
+a.case-studies-thumbnail-link img {vertical-align:bottom;}
+.entry-meta {min-height:22px;float:right;}
+a.website {
+	text-decoration: none;
+	color: #006699;
+	font-size: 12px;
+	font-family: Arial;
+	margin: 10px 0px;
+	display: block;
+}
+a.website:hover {color:#0091d4;}
+a.mini-gallery-link {display: block;color: #999999;}
+a.mini-gallery-link:hover {color: #0091d4;}
+img.mini-gallery-image:hover {border-color: #0091d4;}
+#portfolio-gallery .portfolio-item a {display: block;border: 1px solid #ccc;}
+#portfolio-gallery .portfolio-item a:hover {border-color:#0099FF;}
+a.portfolio-link {display:block;margin-bottom:10px;color:#999;}
+a.portfolio-link:hover {color:#0091d4;}
+a.portfolio-link h3:hover {color:#0091d4;}
+a.portfolio-image:hover{border-color:#0099FF;}
+a.partner-login {
+	width:181px;
+	height:26px;
+	display:block;
+	background-image:url('../images/buttons/partner-login.jpg');
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	text-indent: -9999px; 
+
+}
+a.partner-login:hover {
+	background-position:0px -26px;
+}
+/* =================================================================================================
+-- Main Menus
+================================================================================================= */
+#main-menu ul#menu-main-menu{position:relative;}
+#main-menu ul#menu-main-menu li {
+	float:left;
+	display:block;
+	width:158px;	
+	margin:0px 1px;
+	position:relative;
+}
+#main-menu ul#menu-main-menu li a {
+	display:block;
+	padding:5px;
+	font-weight:normal;
+	font-size:11px;
+	line-height:12px;
+	letter-spacing:3px;
+	height:12px;
+	text-decoration:none;
+	color:#fff;
+	text-align:center;
+	text-transform:uppercase;
+	background-color:#666666;
+}
+#main-menu ul#menu-main-menu li ul.sub-menu {
+	display:none;
+	position:absolute;
+	left:0px;
+	top:22px;
+	margin:0px 0px 0px -1px;
+	padding:0px;
+}
+#main-menu ul#menu-main-menu li ul.sub-menu li {float:left;width:158px;z-index: 10000;}
+#main-menu ul#menu-main-menu li ul.sub-menu li a {
+	display:block;
+	height:auto;
+	padding: 6px 9px;
+	color:white;
+	font-size:12px;
+	letter-spacing:normal;
+	font-weight:normal;
+	text-align:left;
+	text-transform:none;
+	background-color:#999999;
+
+}
+#main-menu ul#menu-main-menu li ul.sub-menu li a:hover {background-color:#656565!important;}
+#main-menu ul#menu-main-menu li.about-us a:hover,
+#main-menu ul#menu-main-menu li.about-us.current-menu-item a,
+#main-menu ul#menu-main-menu li.about-us.current-menu-parent a {background-color:#626a3b;}
+#main-menu ul#menu-main-menu li.people a:hover,
+#main-menu ul#menu-main-menu li.people.current-menu-item a,
+#main-menu ul#menu-main-menu li.people.current-menu-parent a,
+.single-investment #main-menu ul#menu-main-menu li.people a,
+.single-operations #main-menu ul#menu-main-menu li.people a {background-color:rgb(77, 93, 109);}
+.single-investment #main-menu ul#menu-main-menu li.people ul.sub-menu li a,
+.single-operations #main-menu ul#menu-main-menu li.people ul.sub-menu li a {background-color:#999999;}
+
+#main-menu ul#menu-main-menu li.contact-us a:hover,
+#main-menu ul#menu-main-menu li.contact-us.current-menu-item a,
+#main-menu ul#menu-main-menu li.contact-us.current-menu-parent a {background-color:rgb(116, 63, 49);}
+#main-menu ul#menu-main-menu li.news a:hover,
+#main-menu ul#menu-main-menu li.news.current-menu-item a,
+#main-menu ul#menu-main-menu li.news.current-menu-parent a {background-color:#465e62;}
+#main-menu ul#menu-main-menu li.current-menu-item ul.sub-menu li a,
+#main-menu ul#menu-main-menu li.current-menu-parent ul.sub-menu li a {background-color:#999999;}
+#main-menu ul#menu-main-menu li.strategy a:hover,
+#main-menu ul#menu-main-menu li.strategy.current-menu-item a,
+#main-menu ul#menu-main-menu li.strategy.current-menu-parent a {background-color:#525343;}
+#main-menu ul#menu-main-menu li.investments a:hover,
+#main-menu ul#menu-main-menu li.investments.current-menu-item a,
+#main-menu ul#menu-main-menu li.investments.current-menu-parent a {background-color: #564b47;}
+.page-current #main-menu ul#menu-main-menu li.investments a,
+.page-communications #main-menu ul#menu-main-menu li.investments a,
+.page-consumer #main-menu ul#menu-main-menu li.investments a
+.page-education #main-menu ul#menu-main-menu li.investments a,
+.page-energy #main-menu ul#menu-main-menu li.investments a,
+.page-financial-services #main-menu ul#menu-main-menu li.investments a,
+.page-healthcare #main-menu ul#menu-main-menu li.investments a,
+.page-industrial #main-menu ul#menu-main-menu li.investments a,
+.page-alphabetical #main-menu ul#menu-main-menu li.investments a,
+.single-portfolio #main-menu ul#menu-main-menu li.investments a {background-color: #564b47!important;}
+
+/* =================================================================================================
+-- Top Menus
+================================================================================================= */
+#top-menu {
+	height:30px;
+	display:block;
+	float:right;
+	text-transform:uppercase;
+	text-align:right;
+	color:#999999;
+}
+#top-menu ul#menu-top-menu {
+	display:block;
+	padding:0px;
+	margin:9px 0px 0px 0px;
+	height:21px;
+}
+#top-menu ul#menu-top-menu li {float:left;}
+#top-menu ul#menu-top-menu li:after {
+	content:"|";
+	padding:0px 2px;
+}
+#top-menu ul#menu-top-menu li:last-child:after {
+	content:"";
+	padding:0px;
+}
+#top-menu ul#menu-top-menu li a {
+	color:#ccc;
+	text-decoration:none;
+	font-size:10px;
+	font-weight:bold;
+	letter-spacing:1px;
+	padding: 0px 4px;
+}
+.sidebar-wrapper ul.menu li.parent a {background-color:transparent!important;}
+
+/* =================================================================================================
+-- Middle Menu
+================================================================================================= */
+#middle-menu {
+	float: right;
+	margin-right:100px;
+}
+#middle-menu ul#menu-middle-menu li {
+	float:right;
+	margin:0px 5px;
+}
+#middle-menu ul#menu-middle-menu li a {
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	display:block;
+	text-indent: -9999px; 
+}
+#middle-menu ul#menu-middle-menu li.partners-area a {
+	width:91px;
+	height:20px;
+	background-image:url('../images/buttons/partner-login-area.jpg');
+}
+#middle-menu ul#menu-middle-menu li.firm-overview-pdf a {
+	width:115px;
+	height:20px;
+	background-image:url('../images/buttons/firm-overview.jpg');
+}
+
+#middle-menu ul#menu-middle-menu li a:hover {background-position:0px -20px;}
+/* =================================================================================================
+-- News Menu
+================================================================================================= */
+ul#menu-news {}
+.sidebar-container ul#menu-news {background-color:#4f747c;padding:5px 0px;}
+.sidebar-container ul#menu-recent-releases {background-color:#4f747c;padding-bottom:0;}
+.page-recent-releases .sidebar-container ul#menu-recent-releases {background-color:rgb(52, 75, 81);}
+ul#menu-recent-releases li.current-menu-item.recent-releases a:hover {color:#618c95;}
+ul#menu-news li {text-indent:11px;}
+ul#menu-news li a,
+ul#menu-recent-releases li a {
+	text-decoration:none;
+	color:white;
+	font-size:12px;
+	display:block;
+	padding:3px 0px;
+	letter-spacing:0px;
+}
+.archive-2013 ul#menu-news li.archive-recent-releases a,
+.archive-2012 ul#menu-news li.archive-2012 a,
+.archive-2011 ul#menu-news li.archive-2011 a,
+.archive-2010 ul#menu-news li.archive-2010 a,
+.archive-2009 ul#menu-news li.archive-2009 a,
+.archive-2008 ul#menu-news li.archive-2008 a,
+.archive-2007 ul#menu-news li.archive-2007 a,
+.archive-2006 ul#menu-news li.archive-2006 a,
+.archive-2005 ul#menu-news li.archive-2005 a,
+.archive-2004 ul#menu-news li.archive-2004 a,
+.archive-2003 ul#menu-news li.archive-2003 a {background-color:#344b51;}
+ul#menu-news li a:hover,
+ul#menu-news li.current-menu-item a,
+.post-type-archive-news.paged ul#menu-news li.archive a {background-color:#344b51;}
+ul#menu-recent-releases li.recent-releases,
+ul#menu-recent-releases li.archive-recent-releases {padding: 10px 0px 0px 0px;margin-bottom: 10px;}
+ul#menu-recent-releases li.recent-releases,
+ul#menu-news li.recent-releases,
+ul#menu-news li.archive-recent-releases,
+ul#menu-news li.archive-archive,
+ul#menu-news li.archive {text-indent:11px;}
+ul#menu-news li.archive,
+ul#menu-news li.archive-archive {margin:5px 0px 0px;}
+ul#menu-news li.archive-recent-releases a,
+ul#menu-news li.recent-releases a,
+ul#menu-news li.archive-archive a,
+ul#menu-news li.archive a,
+ul#menu-recent-releases li.archive-recent-releases a,
+ul#menu-recent-releases li.recent-releases a {
+	font-weight:bold;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+ul.menu-recent-releases li.archive-recent-releases {text-indent: 11px;}
+ul#menu-recent-releases li.recent-releases a:hover {color:#333;background-color:transparent;}
+.archive-recent-releases {text-indent: 11px;}
+/* =================================================================================================
+-- People Menu
+================================================================================================= */
+.menu-investment-team-container,
+.menu-operations-team-container {}
+ul#menu-investment-team,
+ul#menu-operations-team {}
+.sidebar-container ul#menu-investment-team,
+.sidebar-container ul#menu-operations-team {background-color:#515f6c;}
+ul#menu-investment-team li,
+ul#menu-operations-team li {text-indent:20px;}
+ul#menu-investment-team li a,
+ul#menu-operations-team li a {
+	text-decoration:none;
+	color:white;
+	font-size:12px;
+	display:block;
+	padding:3px 0px;
+	letter-spacing:0px;
+}
+ul#menu-investment-team li a:hover,
+ul#menu-operations-team li a:hover,
+ul#menu-investment-team li.current-menu-item a,
+ul#menu-operations-team li.current-menu-item a {background-color:#333333;}
+ul#menu-investment-team li.investment-team,
+ul#menu-operations-team li.operations-team {
+	padding:10px 0px 0px;
+	margin-bottom:10px;
+	text-indent:11px;
+}
+ul#menu-investment-team li.investment-team a,
+ul#menu-operations-team li.operations-team a {
+	font-weight:bold;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+ul#menu-investment-team li.investment-team a:hover,
+ul#menu-operations-team li.operations-team a:hover {color:#333;background-color:transparent;}
+
+/* =================================================================================================
+-- Strategy Menu
+================================================================================================= */
+.sidebar-container ul#menu-strategy {background-color:#666644;padding-top:10px;}
+ul#menu-strategy li {text-indent:8px;}
+ul#menu-strategy li a{
+	text-decoration:none;
+	color:white;
+	font-size:12px;
+	display:block;
+	padding:3px 0px;
+	letter-spacing:0px;
+}
+ul#menu-strategy li a:hover,
+ul#menu-strategy li.current-menu-item a {background-color:rgb(68, 67, 47);}
+
+/* =================================================================================================
+-- Investment Menu
+================================================================================================= */
+.sidebar-container ul#menu-investment {border:0;}
+ul#menu-investment li a{
+	text-decoration:none;
+	color:white;
+	font-size:12px;
+	display:block;
+	padding:3px 0px;
+	letter-spacing:0px;
+}
+.sidebar-container ul#menu-investment li {
+	width:160px;	
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+	padding:10px;
+	margin-bottom:15px;
+	background-color:#695c56;
+}
+ul#menu-investment li a {
+	font-weight:bold;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+ul#menu-investment li a:hover {color: #453d3a;}
+ul#menu-investment li.current-menu-item {background-color:rgb(69, 61, 58);}
+ul#menu-investment li.current-menu-item a:hover {color: #fff;}
+.single-casestudies ul#menu-investment li.case-studies {background-color:rgb(69, 61, 58);}
+.single-casestudies ul#menu-investment li.case-studies a {color: #fff;}
+
+/* =================================================================================================
+-- Portfolio Menu
+================================================================================================= */
+.page-portfolio ul#menu-portfolio li#menu-item-1038.current-menu-item a{background-color:transparent;}
+#menu-portfolio {border: 0;margin-bottom:0;}
+ul#menu-portfolio li.portfolio {
+	background-color: #695c56;
+	width: 180px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 5px 0px;
+	margin-bottom:15px;
+}
+ul#menu-portfolio li#menu-item-1038.portfolio a:hover {background-color:transparent;color:#453d3a;}
+ul#menu-portfolio li {
+	text-indent: 11px;
+}
+ul#menu-portfolio li a {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	display: block;
+	padding: 3px 0px;
+	letter-spacing: 0px;
+}
+ul#menu-portfolio li.portfolio a {
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: white;
+}
+ul#menu-portfolio li.portfolio ul.sub-menu {margin:5px 0px;}
+ul#menu-portfolio li.portfolio ul.sub-menu li {
+	text-indent:11px;
+}
+ul#menu-portfolio li.portfolio ul.sub-menu li a {
+	font-weight: normal;
+	text-transform: none;
+	letter-spacing:normal;
+}
+ul#menu-portfolio li#menu-item-1038.portfolio ul.sub-menu li a:hover,
+ul#menu-portfolio li#menu-item-1038.portfolio ul.sub-menu li.current-menu-item a {
+	background-color: #453d3a;
+	color: #fff!important;
+}
+ul#menu-portfolio li.portfolio ul.sub-menu li.by-industry ul.sub-menu {}
+ul#menu-portfolio li.portfolio ul.sub-menu li.by-industry ul.sub-menu li {
+	text-indent: 23px;
+}
+ul#menu-portfolio li a:hover,
+ul#menu-portfolio li.by-industry ul.sub-menu li a:hover,
+ul#menu-portfolio li.by-industry ul.sub-menu li.current-menu-item a {
+	background-color: #453d3a;
+	color:#fff;
+}
+ul#menu-portfolio li#menu-item-1262.by-industry a:hover{
+	background-color: transparent!important;
+	color:#fff;
+}
+ul#menu-portfolio li#menu-item-1262.by-industry .sub-menu li a:hover {background-color: #453d3a!important;}
+ul#menu-portfolio li.portfolio ul.sub-menu li.alphabetical a:hover,
+ul#menu-portoflio li.portfolio ul.sub-menu li.alphabetical.current-menu-item a {
+	background-color: #453d3a;
+	color:#fff;
+}
+.page-portfolio ul#menu-portfolio li.portfolio a {background-color: #453d3a;}
+.page-portfolio ul#menu-portfolio li.portfolio .sub-menu a,
+.page-portfolio ul#menu-portfolio li.portfolio.current-page-parent a {background-color: transparent;}
+
+ul#menu-portfolio li.case-studies,
+ul#menu-portfolio li.testimonials {
+	width: 160px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #695c56;
+}
+ul#menu-portfolio li.case-studies a,
+ul#menu-portfolio li.testimonials a {
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+ul#menu-portfolio li.case-studies a:hover,
+ul#menu-portfolio li.testimonials a:hover {
+	color: #453d3a;
+	background-color:transparent;
+}
+
+
+.post-tag-communications ul#menu-portfolio li.portfolio ul.sub-menu li.communications a,
+.post-tag-consumer ul#menu-portfolio li.portfolio ul.sub-menu li.consumer a,
+.post-tag-education ul#menu-portfolio li.portfolio ul.sub-menu li.education a,
+.post-tag-energy ul#menu-portfolio li.portfolio ul.sub-menu li.energy a,
+.post-tag-financial-services ul#menu-portfolio li.portfolio ul.sub-menu li.financial-services a,
+.post-tag-healthcare ul#menu-portfolio li.portfolio ul.sub-menu li.healthcare a,
+.post-tag-industrial ul#menu-portfolio li.portfolio ul.sub-menu li.industrial a {
+	background-color: #453d3a!important;
+	color:#fff;
+}
+
+ul#menu-portfolio li.case-studies a:hover,
+ul#menu-portfolio li.testimonials a:hover {background-color:transparent!important;}
+
+
+/* =================================================================================================
+-- Previous And Next Menu
+================================================================================================= */
+/* Team Nav */
+ul#team-nav {
+	border-top: 1px dashed #999;
+	padding-top:10px;
+	margin-top:100px;
+	float:left;
+	width:100%;
+}
+ul#team-nav li {}
+ul#team-nav li#previous{width:110px;float:left;}
+ul#team-nav li#next{width:63px;float:right;}
+ul#team-nav li a {display:block;}
+ul#team-nav li a:hover {background-position:0 -18px!important;}
+ul#team-nav li#previous a {
+	float:left;
+	width:110px;
+	height:18px;
+	background-image:url('../images/buttons/previous-sm.jpg');
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	text-indent: -9999px; 
+}
+ul#team-nav li#next a {
+	float:right;
+	width:63px;
+	height:18px;
+	background-image:url('../images/buttons/next-sm.jpg');
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	text-indent: -9999px; 
+}
+/* Case Nav */
+ul#case-nav,
+ul#portfolio-nav {
+	border-top: 1px dashed #999;
+	padding-top:10px;
+	margin-top:50px;
+	float:left;
+	width:100%;
+}
+ul#case-nav li,
+ul#portfolio-nav li {}
+ul#case-nav li#previous,
+ul#portfolio-nav li#previous {width:143px;float:left;}
+ul#case-nav li#next,
+ul#portfolio-nav li#next{width:85px;float:right;}
+ul#case-nav li a,
+ul#portfolio-nav li a {display:block;}
+ul#case-nav li a:hover,
+ul#portfolio-nav li a:hover {background-position:0 -25px!important;}
+ul#case-nav li#previous a,
+ul#portfolio-nav li#previous a {
+	float:left;
+	width:143px;
+	height:25px;
+	background-image:url('../images/buttons/previous-lg.jpg');
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	text-indent: -9999px; 
+}
+ul#case-nav li#next a,
+ul#portfolio-nav li#next a {
+	float:right;
+	width:85px;
+	height:25px;
+	background-image:url('../images/buttons/next-lg.jpg');
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	text-indent: -9999px; 
+}
+
+/* Page Nav */
+#page-nav {
+	width:100%;
+	float:left;
+	display:block;
+	clear:both;
+	border-top:1px dashed #999;
+	margin-top:10px;
+	padding-top:10px;
+}
+#page-nav li{float:left;}
+#page-nav li#previous {float:left;}
+#page-nav li#next {float:right!important;}
+#page-nav li a {
+	display:block;
+	background-repeat:no-repeat;
+	color:#006699;
+	font-size:12px;
+	font-family:arial;
+}
+#page-nav li#previous a{
+	background-image:url('../images/buttons/blue-arrow-previous.png');
+	background-position:center left;
+	padding-left:15px;
+}
+#page-nav li#next a{
+	background-image:url('../images/buttons/blue-arrow-next.png');
+	background-position:center right;
+	padding-right:15px;
+}
+#more-testimonials a {
+	font-size:12px;
+	font-family:arial;
+	float:right;
+	text-decoration: none;
+	color: #006699;
+	background-image:url('../images/buttons/blue-arrow-next.png');
+	background-position:center right;
+	background-repeat:no-repeat;
+	padding-right:15px;
+}
+
+/* =================================================================================================
+-- Switcher
+================================================================================================= */
+#testimonial-switcher {height:22px}
+#testimonial-switcher ul{
+	display:block;
+	float:right;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+#testimonial-switcher ul li {
+	float:left;
+	padding:3px;
+}
+#case-studies-switcher {height:22px}
+#case-studies-switcher ul{
+	display:block;
+	float:right;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+#case-studies-switcher ul li {
+	float:left;
+	padding:3px;
+}
+
+/* =================================================================================================
+-- Pagination
+================================================================================================= */
+.navigation ol.wp-paginate {
+	margin: 10px 0px;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+	color: #666;
+	text-align:center;
+	display:block;
+	
+}
+.navigation ol.wp-paginate a {
+	background: #666666;
+	border: 0;
+	color: #fff;
+	margin-right: 4px;
+	padding: 3px 6px;
+	text-align: center;
+	text-decoration: none;
+}
+.post-type-archive-news .wp-paginate .current,
+.single-news .wp-paginate .current,
+.page-news .wp-paginate .current,
+.page-recent-releases .wp-paginate .current {
+	color: #fff;
+	background: #465e62;
+	border: 0;
+	margin-right: 4px;
+	padding: 3px 6px
+}
+
+
+
+

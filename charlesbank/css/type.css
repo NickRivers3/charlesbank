@@ -1,0 +1,274 @@
+﻿/*
+Navigation CSS
+*/
+@charset "utf-8";
+
+/* =================================================================================================
+-- Global Styles
+================================================================================================= */
+html, body, p, a, li, span  {
+	font-family: Arial, sans-serif;
+	font-size:13px;
+	line-height:16px;
+	color:#5b5b5b
+}
+.entry-content p {
+	margin:15px 0px;
+	padding:0px;
+	line-height:18px;
+}
+.entry li {
+	padding:0px 0px 5px 0px;
+}
+
+h1.entry-title {
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	font-size: 28px;
+	line-height:28px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	color:#546179;
+}
+.entry-content h2 {
+	color: #5b5b5b;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 13px;
+}
+#case-studies-article h1.entry-title {
+	padding: 0px 0px 8px;
+	font-size: 22px;
+	margin:15px 0px 10px 0px;
+	color:#566d9f;
+	text-transform: none;
+	border-bottom: 1px solid #ccc;
+}
+#member-title {
+	color: #546179;
+	height: 25px;
+	font-style: italic;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 12px;
+	border-top: 1px solid #999;
+}
+
+.two-column h2 {
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	font-size: 24px;
+	line-height:24px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	color:#92432E;
+}
+#sidebar-header {
+	padding:15px 0px 15px 13px;
+	font-size: 26px;
+	line-height:26px;
+	font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 100;
+	color:white;
+	letter-spacing:1px;
+}
+#sidebar-alt-header {
+	border-bottom: 1px solid #a1c3cc;
+	font-family: Arial, sans-serif;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#666;
+	padding:10px;
+	letter-spacing: 1px;
+}
+h1.page-title {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 27px;
+	line-height:27px;
+	font-weight: 100;
+	border-bottom: 1px solid #ccc;
+	margin:0px 0px 10px;
+	padding:0px 0px 15px;	
+	text-transform: uppercase;
+	color: #546179;
+}
+.single-casestudies h1.page-title,
+.single-portfolios h1.page-title {
+	font-size:22px;
+	line-height:22px;
+	padding:0px 0px 10px;
+}
+h3.entry-title {
+	color: #999;
+	letter-spacing: 2px;
+	margin: 10px 0px 0px;
+	text-transform: uppercase;
+}
+#portfolio-article .entry-title {
+	font-size: 22px;
+	color: #566d9f;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #ccc;
+	text-transform:none;
+}
+#news-article h1.entry-title {
+	font-size: 21px;
+	line-height:25px;
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+	color: #666;
+	margin:15px 0px;
+	text-transform:none;
+}
+.slider-title {
+	font-size: 19px;
+	color: #566d9f;
+	font-weight: normal;
+	line-height: 23px;
+	font-family: arial;
+	padding-bottom:10px;
+	border:0;
+}
+p.blue-call-out {
+	color: #607181;
+	font-size: 14px;
+	line-height:18px;
+	font-weight: 600;
+	font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	word-spacing: 1px;
+	padding:0px;
+}
+p.green-call-out {
+	color: #7e7b52;
+	font-style: italic;
+	padding: 0px 30px;
+	font-size: 14px;
+	line-height:20px;
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+	word-spacing: 1px;
+}
+
+/* Testimonial Gallery */
+.testimonial-gallery-quote {
+	color: white;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight:300;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#testimonial-gallery .testimonial-title {
+	font-size: 14px;
+	line-height: 18px;
+	color: white;
+	display: inline-block;
+}
+.testimonial-gallery-info span {
+	font-size: 14px;
+	line-height: 18px;
+	color: white;
+	font-style: italic;
+}
+.page-testimonials #page-content h1.entry-title {margin-bottom:0px;}
+.testimonial-item .testimonial-title {
+	font-size:13px;
+	display:inline-block;
+	float:left;
+	margin-right:4px;
+	line-height: 18px;
+	color:#333;
+}
+.testimonial-item .testimonial-credentials,
+.testimonial-item .testimonials-company {font-weight: bold;float:left;line-height: 18px;color:#333;}
+.testimonials-company.with {float: none;}
+/* Testimonial Mini Gallery */
+.testimonial-mini-quote {
+	color:#596813;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight:300;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	word-spacing:-1px;
+}
+.testimonial-mini-item .testimonial-title,
+.testimonial-mini-item .testimonial-credentials,
+.testimonial-mini-item .testimonials-company {
+	font-size:12px;
+	font-weight:normal;
+	float:left;
+	line-height: 16px;
+	color:#666;
+}
+/* Case Studies */
+h4.case-studies-title {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.case-studies-item p {
+	color: #666;
+	line-height: 20px;
+}
+.case-studies-section {
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+/* Portfolio Mini Gallery */
+.min-gallery-title {
+	font-size: 13px;
+	font-family: Arial, "Lucida Grande", sans-serif;
+	text-transform: uppercase;
+	margin: 5px 0px;
+}
+
+/* Portfolio */
+h4.portfolio-section {
+	font-size: 13px;
+	color: #333;
+	letter-spacing: 1px;
+	text-transform:uppercase;
+}
+h4.portfolio-section.inline {display:inline-block;}
+h5.portfolio-section {
+	display:inline-block;
+	font-size:11px;
+	font-weight:normal;
+	color:#999999;
+	text-transform:uppercase;
+}
+.portfolio-details-item span {
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+}
+.portfolio-details-item .website {font-weight:bold;}
+.portfolio-info-item .entry-content p {font-size: 12px;margin:10px 0px 0px;}
+.portfolio-info-item span,
+.portfolio-info-item a {font-size:12px;}
+
+/* Portfolio Slider */
+.company-slide span {
+	font-weight: bold;
+	font-size: 14px;
+	color: #666666;
+}
+.company-slide .slider-sub-description span {
+	font-size: 11px;
+	font-weight: normal;
+	color: #999;
+}
+h5.label {
+	font-size: 11px;
+	font-weight: normal;
+	color: #999;
+	text-transform:uppercase;
+}
+
+
+
+

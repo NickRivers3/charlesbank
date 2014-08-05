@@ -1,0 +1,665 @@
+/*
+The River CSS
+Width/Height and Layout
+*/
+@charset "utf-8";
+
+/* =================================================================================================
+-- Global Styles
+================================================================================================= */
+/* Global */
+	body									{margin:0px;padding:0px;}
+	#site 									{width:1224px;height:auto;margin:0 auto;padding:0px 0px 30px 0px;}
+	#site-container							{width:1224px;min-height:800px;float:left;}
+	#site-wrapper							{margin:30px auto 0px;}
+	#left-column.sidebar					{margin-right:10px;}
+	#right-column.sidebar					{margin-left:10px;}
+	#sub-content							{margin-left:10px;margin-bottom:15px;}
+	.sidebar-alt #sub-content				{margin-left:10px;margin-right:10px;margin-bottom:15px;}
+	#footer									{width:1224px;float:left;}
+	
+/* Main Class */
+	.container								{position:relative; width:960px; margin: 0 auto; padding: 0;}
+
+/* Main Class with Content */
+	.container .grid,
+	.container .grids 						{float:left; display: inline-block;}
+	.grids.float-right						{float:right;}
+
+/* Flush Setttings */
+	.grid.left, .grids.left					{margin-left: 0;}
+	.grid.right, .grids.right				{margin-right: 0;}
+	
+
+/* Absolute Positions */
+	.grid.fixed, .grids.fixed				{position:fixed; bottom:0;}
+
+/* Clear Settings */
+	.container:after,
+	.wrapper:after,
+	.content-wrapper:after,
+	.main-content:after,
+	.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+	.clearfix {clear: both;}
+
+/* Default Sizes */
+	.container .sixty.grid,
+	.container .sixty.grids					{width: 60px;}
+	.container .one-hundred.grids			{width: 100px;}
+	.container .one-twenty.grids			{width: 120px;}
+	.container .one-forty.grids				{width: 140px;}
+	.container .one-sixty.grids				{width: 160px;}
+	.container .two-hundred.grids			{width: 200px;}
+	.container .two-twenty.grids			{width: 220px;}
+	.container .two-forty.grids				{width: 240px;}
+	.container .two-sixty-six.grids			{width: 266px;}
+	.container .three-hundred.grids			{width: 300px;}
+	.container .three-thirty.grids			{width: 330px;}
+	.container .three-eighty.grids			{width: 380px;}
+	.container .four-forty-two.grids		{width: 442px;}
+	.container .four-sixty.grids			{width: 460px;}
+	.container .four-eighty.grids			{width: 480px;}
+	.container .five-twenty.grids			{width: 520px;}
+	.container .five-forty.grids			{width: 540px;}
+	.container .six-twenty.grids			{width: 620px;}
+	.container .seven-hundred.grids			{width: 700px;}
+	.container .seven-forty.grids			{width: 740px;}
+	.container .seven-eighty.grids			{width: 780px;}	
+	.container .eight-sixty.grids			{width: 860px;}
+	.container .nine-forty.grids			{width: 940px;}
+	
+	
+/* The Amazon
+Desktop Size 1200-960 width ===================================================================== */
+@media only screen and (min-width:960px) and (max-width:1200px) {
+
+/* Global */
+	body											{margin:0px;padding:0px;}
+	#site 											{width:960px;height:auto;margin:0 auto;padding:0px 0px 30px 0px;}
+	#site-container									{width:960px;min-height:800px;float:left;}
+	#site-wrapper									{margin:30px auto 0px;}
+	#left-column.sidebar							{margin-right:10px;}
+	#right-column.sidebar							{margin-left:10px;}
+	#sub-content									{margin-left:10px;margin-bottom:15px;}
+	.sidebar-alt #sub-content						{margin-left:10px;margin-right:10px;margin-bottom:15px;}
+	#footer											{width:960px;float:left;}
+	
+/* Main Class */
+	.container										{position:relative; width:900px; margin: 0 auto; padding: 0;}
+
+/* Sizes */
+	.container .two-hundred.grids					{width: 180px;}
+	.container .five-twenty.grids					{width: 500px;}
+	.container .seven-forty.grids					{width: 700px;}
+	.container .four-forty-two.grids 				{width: 402px;}
+	
+/* Menus */
+	.sidebar-container .sidebar-wrapper ul.menu 	{width:160px;}
+	#main-menu ul#menu-main-menu li					{width: 148px;}
+	#main-menu ul#menu-main-menu li ul.sub-menu li	{width:148px;}
+	ul#menu-portfolio li.portfolio					{width:160px;}
+	ul#menu-portfolio li.case-studies, 
+	ul#menu-portfolio li.testimonials,
+	.sidebar-container ul#menu-investment li		{width:140px;}
+	ul#menu-strategy li 							{text-indent:inherit;}
+	ul#menu-strategy li a							{padding:3px;}
+	#portfolio-slider								{width:98px;}
+	#middle-menu {margin-right:75px;}
+	
+/* Containers */
+	#mini-gallery,
+	#mini-gallery .wrapper,
+	.testimonial-mini-item,
+	#more-testimonials								{width:160px;}
+	#case-studies-container,
+	#testimonials-container							{width: 297px;}
+	.portfolio-mini-gallery img.mini-gallery-image	{width:295px;height:auto;}
+	#testimonial-gallery							{height:398px;}
+	.company-slide									{width:98px;}
+	.portfolio-details								{width:311px;}
+	.case-studies-content-wrapper					{width:398px;}
+	.right-column									{width:398px;}
+	#testimonial-gallery,
+	.gallery-wrapper,
+	.testimonial-gallery-image						{width:630px;}
+	.testimonial-item .entry-content,
+	.testimonial-content-wrapper					{width:489px;}
+	.two-column										{width:385px;}
+	#media-sidebar .sidebar-inner .textwidget ul li	{margin:5px 0px;word-wrap:break-word;}
+	
+}
+
+/* The Mississippi
+Tablet Size 768 width (Portait, iPad)  ========================================================== */
+
+@media only screen and (min-width:768px) and (max-width:959px) {
+/* Global */
+	body											{margin:0px;padding:0px;}
+	#site 											{width:768px;height:auto;margin:0 auto;padding:0px 0px 30px 0px;}
+	#site-container									{width:768px;min-height:800px;float:left;}
+	#site-wrapper									{margin:30px auto 0px;}
+	#left-column.sidebar							{margin-right:10px;}
+	#right-column.sidebar							{margin-left:10px;}
+	#sub-content									{margin-left:10px;margin-bottom:15px;}
+	.sidebar-alt #sub-content						{margin-left:10px;margin-right:10px;margin-bottom:15px;}
+	#footer											{width:768px;float:left;}
+	
+/* Main Class */
+	.container										{position:relative; width:700px; margin: 0 auto; padding: 0;}
+	
+/* Sizes */
+	.container .two-hundred.grids					{width: 150px;}
+	.container .four-forty-two.grids				{width: 323px;}
+	.container .two-sixty-six.grids					{width: 175px;}
+	.container .four-forty-two.grids				{width: 323px;}
+	.container .five-twenty.grids					{width: 360px;}
+	.container .seven-forty.grids					{width: 530px;}
+	
+		
+/* Menus */
+	.sidebar-container .sidebar-wrapper ul.menu 	{width:130px;}
+	#main-menu ul#menu-main-menu li					{width:114px;}
+	#main-menu ul#menu-main-menu li ul.sub-menu li	{width:114px;}
+	ul#menu-portfolio li.portfolio					{width:130px;}
+	ul#menu-portfolio li.case-studies, 
+	ul#menu-portfolio li.testimonials,
+	.sidebar-container ul#menu-investment li		{width:110px;}
+	ul#menu-strategy li 							{text-indent:inherit;}
+	ul#menu-strategy li a							{padding:3px 5px;}
+	#portfolio-slider								{width:92px;}
+	ul#menu-recent-releases li.recent-releases, 
+	ul#menu-news li.recent-releases, 
+	ul#menu-news li.archive-recent-releases,
+	ul#menu-news li.archive-archive, 
+	ul#menu-news li.archive,
+	.archive-recent-releases,
+	ul#menu-portfolio li,
+	ul#menu-investment-team li.investment-team,
+	ul#menu-operations-team li.operations-team,
+	ul#menu-investment-team li, 
+	ul#menu-operations-team li	{text-indent:inherit;}
+	ul#menu-news li.archive-recent-releases a, 
+	ul#menu-news li.recent-releases a, 
+	ul#menu-news li.archive-archive a, 
+	ul#menu-news li.archive a, 
+	ul#menu-recent-releases li.archive-recent-releases a, 
+	ul#menu-recent-releases li.recent-releases a {padding:0px 5px;}
+	#middle-menu {margin-right:50px;}
+	ul#menu-portfolio li a {padding:3px 5px;}
+	ul#menu-investment-team li.investment-team a,
+	ul#menu-operations-team li.operations-team a {padding:3px 5px;}
+	ul#menu-investment-team li a, 
+	ul#menu-operations-team li a {padding:3px 3px 3px 8px;}
+	ul#menu-portfolio li.portfolio ul.sub-menu li.by-industry ul.sub-menu li {text-indent: inherit;}
+	
+/* Other Elements */
+	#mini-gallery,
+	#mini-gallery .wrapper,
+	.testimonial-mini-item,
+	#more-testimonials				{width:130px;}
+	#case-studies-container,
+	#testimonials-container							{width: 212px;}
+	.portfolio-mini-gallery img.mini-gallery-image	{width:210px;height:auto;}
+	.company-slide									{width:92px;}
+	.portfolio-details								{width:200px;}
+	.case-studies-content-wrapper					{width:228px;}
+	.right-column									{width:250px;}
+	.portfolio-image,
+	.portfolio-image img							{width:228px;height:auto;}
+	#testimonial-gallery,
+	.gallery-wrapper,
+	.testimonial-gallery-image						{width:460px;}
+	#testimonial-gallery							{height:297px;}
+	.testimonial-item .entry-content,
+	.testimonial-content-wrapper					{width:319px;}
+	.two-column,
+	.two-column img {width:285px;}
+	#media-sidebar .sidebar-inner .textwidget ul li	{margin:5px 0px;word-wrap:break-word;}
+	#sidebar-header {font-size:20px;}
+	#case-studies-article .thumb img {width:190px; height:auto;}
+	.left-column {width:190px;}
+	#portfolio-gallery {width: 328px;}
+	#mini-gallery {height:330px;}
+	#mini-gallery .wrapper	{min-height:300px;}
+	.testimonial-mini-gallery-content-wrapper {margin:10px 0px 0px 0px;}
+	
+/* People */
+	#portrate-image img {width: 175px;height: auto;}
+}
+/* The Pemigewasset
+Mobile Size 480 width (Landscape)
+================================================================================================= */
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+/* Global */
+	body											{margin:0px;padding:0px;}
+	#site 											{width:480px;height:auto;margin:0 auto;padding:0px 0px 30px 0px;}
+	#site-container									{width:480px;min-height:450px;float:left;}
+	#site-wrapper									{margin:30px auto 0px;}
+	#left-column.sidebar							{margin-right:10px;}
+	#right-column.sidebar							{margin-left:10px;}
+	#sub-content									{margin-left:0px;margin-bottom:15px;margin-top:10px;}
+	.sidebar-alt #sub-content						{margin-left:10px;margin-right:10px;margin-bottom:15px;}
+	.content-wrapper								{padding:15px;}
+	#footer											{width:480px;float:left;}
+	
+/* Main Class */
+	.container										{position:relative; width:420px; margin: 0 auto; padding: 0;}
+
+/* Sizes */
+	.container .two-hundred.grids,
+	.container .five-twenty.grids,
+	.container .seven-forty.grids,
+	.container .four-forty-two.grids				{width: 420px;}
+
+/* Menus */
+	/* Main Menu */
+	#main-menu ul#menu-main-menu li							{width:130px;margin:5px;}
+	#main-menu ul#menu-main-menu li ul.sub-menu li			{width:130px;margin:0px;margin-left: 1px;}
+	
+	/* Top Menu */
+	#top-menu ul#menu-top-menu li.view-background-photo	{display:none;}
+	
+	/* Middle Menu */
+	#middle-menu {margin-right:0px;}
+	#middle-menu ul#menu-middle-menu li.firm-overview-pdf a:hover,
+	#middle-menu ul#menu-middle-menu li.partners-area a:hover {background-position:0px -17px;}
+	#middle-menu ul#menu-middle-menu li.partners-area a {width:78px;height:17px;background-size:78px 34px;}
+	#middle-menu ul#menu-middle-menu li.firm-overview-pdf a {width:99px;height:17px;background-size:99px 34px;}
+	
+	/* Sidebar */
+	.sidebar-container .sidebar-wrapper ul.menu 			{width:400px;margin:0px 10px;padding-bottom:0px;height:40px;}
+	#media-sidebar .sidebar-inner .textwidget ul li	{margin:5px 0px;word-wrap:break-word;}
+	.testimonial-gallery-quote {font-size:12px;line-height:16px;text-indent:inherit;float:left;}
+	#media-sidebar {margin-top:0px!important;margin-bottom:10px;}
+	
+	/* Investment Menus */	
+	ul#menu-portfolio li.portfolio					{width:400px;}
+	ul#menu-portfolio li.case-studies, 
+	ul#menu-portfolio li.testimonials,
+	.sidebar-container ul#menu-investment li		{width:170px;}
+	a.team-thumbnail img							{width: 126px;height: auto;}
+	ul#menu-portfolio li.portfolio					{margin-left:0px;margin-right:0px;}
+	.page-case-studies ul#menu-investment,
+	.page-testimonials ul#menu-investment,
+	.single-casestudies ul#menu-investment {margin:0px 5px;width:410px;}
+	.page-case-studies ul#menu-investment li,
+	.page-testimonials ul#menu-investment li, 
+	.single-casestudies ul#menu-investment li{width:110px;float:left;margin:0px 5px;padding:8px;}
+	ul#menu-portfolio li {font-size:12px;line-height:16px;text-indent:inherit;float:left;}
+	ul#menu-portfolio li a {padding:3px 5px;}
+	#menu-portfolio {height:218px;}
+	ul#menu-portfolio li.portfolio ul.sub-menu li,
+	ul#menu-portfolio li.portfolio ul.sub-menu li.by-industry ul.sub-menu li	{text-indent:inherit;}
+	#left-column #case-studies-sidebar, 
+	#left-column #testimonials-sidebar, 
+	#left-column #portfolio-sidebar {margin-top:10px!important;}
+	ul#menu-portfolio li.testimonials {margin-left: 10px;}
+	ul#menu-portfolio li.case-studies {margin-right: 10px;}
+	ul#menu-portfolio li.portfolio ul.sub-menu li.by-industry ul.sub-menu {margin:0px;}
+	
+	/* Strategy Menu */
+	ul#menu-strategy li 							{text-indent:inherit;float:left;margin:2px;}
+	ul#menu-strategy li a							{padding:3px 5px;}
+	.sidebar-container ul#menu-strategy				{height:60px;}
+	#strategy-sidebar								{margin-top:10px!important;}
+	
+	/* News Menu */
+	ul#menu-recent-releases li.recent-releases, 
+	ul#menu-news li.recent-releases, 
+	ul#menu-news li.archive-recent-releases,
+	ul#menu-news li.archive-archive, 
+	ul#menu-news li.archive,
+	.archive-recent-releases {font-size:12px;line-height:16px;text-indent:inherit;float:left;}
+	ul#menu-news li	{text-indent:inherit;float:left;margin:0px 5px;}
+	ul#menu-news li.archive-recent-releases a, 
+	ul#menu-news li.recent-releases a, 
+	ul#menu-news li.archive-archive a, 
+	ul#menu-news li.archive a, 
+	ul#menu-recent-releases li.archive-recent-releases a, 
+	ul#menu-recent-releases li.recent-releases a {padding:3px 5px;}
+	ul#menu-news li a, 
+	ul#menu-recent-releases li a {padding:3px;}
+	ul#menu-recent-releases li.archive-recent-releases a {padding:3px 5px;}
+	.archive-recent-releases {text-indent:inherit;}
+	.sidebar-container ul#menu-recent-releases {margin-bottom: 10px;}
+	releases li.recent-releases, 
+	ul#menu-news li.recent-releases, 
+	ul#menu-news li.archive-recent-releases, 
+	ul#menu-news li.archive-archive, 
+	ul#menu-news li.archive {text-indent: inherit;margin:0px 5px;}
+	.page-recent-releases .sidebar-container ul#menu-recent-releases {margin-bottom:10px;}
+	
+	/* People Menus */
+	.page-operations-team ul#menu-investment-team,
+	.page-investment-team ul#menu-operations-team			{height:40px;}
+	ul#menu-investment-team li.investment-team, 
+	ul#menu-operations-team li.operations-team				{margin-bottom:0px;}
+	.page-operations-team .menu-investment-team-container,
+	.page-investment-team .menu-operations-team-container	{height:40px;margin-bottom:10px;}
+	#menu-investment-team,							
+	.menu-investment-team-container							{height:205px;}
+	.menu-investment-team-container							{margin-bottom:10px;}
+	#menu-operations-team,
+	.menu-operations-team-container							{height:165px;}
+	.single-investment .menu-operations-team-container, 
+	.single-investment #menu-operations-team 				{height: 40px;}
+	.single-operations .menu-investment-team-container, 
+	.single-operations #menu-investment-team 				{height: 40px;margin-bottom:10px;}
+	.page-investment-team .menu-investment-team-container	{height:205px;margin-bottom:10px;}
+	.page-operactions-team .menu-operations-team-container	{height:180px;}
+	li.investment-team,
+	li.operations-team 										{width: 390px;}
+	.page-investment-team ul#menu-operations-team			{height:40px;}
+	ul#menu-investment-team li.investment-team,
+	ul#menu-operations-team li.operations-team,
+	ul#menu-investment-team li, 
+	ul#menu-operations-team li {
+		width:127px;
+		border:1px solid #ccc;
+		font-size:12px;
+		line-height:16px;
+		text-indent:inherit;
+		float:left;
+		margin:2px;
+	}
+	ul#menu-investment-team li.investment-team a,
+	ul#menu-operations-team li.operations-team a {padding:3px 5px;font-size:11px;line-height:15px;}
+	ul#menu-investment-team li a, 
+	ul#menu-operations-team li a {padding:3px 5px;font-size:10px;line-height:10px!important;}
+	ul#menu-investment-team li.investment-team, 
+	ul#menu-operations-team li.operations-team {margin: 0px;border:0;width:100%}
+	
+/* Other Elements */
+	/* Galleries */
+	#mini-gallery,
+	#mini-gallery .wrapper,
+	.testimonial-mini-item,
+	#more-testimonials				{width:400px;}
+	.portfolio-mini-gallery img.mini-gallery-image	{width:388px;height:auto;}
+	#portfolio-slider								{width:0px;display:none!important;}
+	.company-slide									{width:92px;}
+	.portfolio-details								{width:380px;margin-left:0px;margin-top:20px;}
+	.case-studies-content-wrapper					{width:395px;margin:10px 0px 0px 0px;}
+	
+	.portfolio-image,
+	.portfolio-image img							{width:287px;height:auto;}
+	.portfolio-mini-gallery							{height:560px;}
+	#testimonial-gallery,
+	.gallery-wrapper,
+	.testimonial-gallery-image						{width:390px;}
+	#testimonial-gallery							{height:255px;}
+	.testimonial-item .entry-content,
+	.testimonial-content-wrapper					{width:249px;}
+	.testimonial-mini-item .testimonial-title,
+	.testimonial-mini-item .testimonial-credentials, 
+	.testimonial-mini-item .testimonials-company	{width:auto;}
+	#testimonial-gallery .testimonial-title,
+	.testimonial-gallery-info span,
+	.testimonial-gallery-info span	{font-size:11px;line-height:15px;}
+	.testimonial-gallery-content-wrapper {width:360px;}
+	#portfolio-gallery {width: 385px;margin-bottom:0px!important;min-height:inherit;}
+	#mini-gallery {height:180px;}
+	#mini-gallery .wrapper,
+	.testimonial-mini-item	{min-height:150px;}
+	.testimonial-mini-gallery-content-wrapper {margin:10px 0px 0px 0px;}
+	.portfolio-thumbnail {width: 118px;	height: auto;}
+	#testimonial-clients .testimonial-item {margin: 10px 0px;}
+	
+	/* Sidebars */
+	#team-sidebar, 
+	#news-sidebar									{margin-top:10px!important;}
+	#sidebar-header {font-size:18px;padding:10px;}
+	#testimonials-sidebar {margin-top:0px;margin-bottom:10px;}
+	#right-column.sidebar	{margin-left:0px;}
+	.sidebar-alt #sub-content {margin-left:0px;margin-right:0px;margin-top:10px;}
+	
+	/* Containers */
+	#case-studies-container,
+	#testimonials-container							{width: 388px;height:280px;margin-right:0px;margin-left:0px;}
+	.two-column,
+	.two-column img 								{width:390px; margin-left:0px;}
+	.left-column 									{width:210px;margin-right:0px;}
+	.right-column									{width:390px;margin-left:0px;}
+	#case-studies-article .thumb img 				{width:210px; height:auto;}
+	#welcome-box 									{width:360px;	margin:0 auto;}
+	
+	/* Portfolio */
+	.portfolio-top {margin-bottom:10px;}
+	.portfolio-bottom {margin-top:0px;}
+	.portfolio-info-item {}
+	.portfolio-details-item.last {border-bottom:1px dashed #ccc;}
+	
+	/* People */
+	#portrate-image {margin-bottom: 10px;margin-right:0px;text-align:center;}
+	#member-info {margin-left: 0px;}
+	
+	a.anniversary-button {position: relative;float: left;margin: 10px;height: auto;}
+	a.anniversary-button img {width: 100px;height: auto;}
+}
+
+/* The Wild Ammonoosuc
+Mobile Size 320 width (Landscape)
+================================================================================================== 
+*/
+	@media only screen and (max-width:479px) {
+/* Global */
+	body											{margin:0px;padding:0px;}
+	#site 											{width:320px;height:auto;margin:0 auto;padding:0px 0px 30px 0px;}
+	#site-container									{width:320px;min-height:500px;float:left;}
+	#site-wrapper									{margin:30px auto 0px;}
+	#left-column.sidebar							{margin-right:10px;}
+	#right-column.sidebar							{margin-left:10px;}
+	#sub-content									{margin-left:0px;margin-bottom:15px;margin-top:10px;}
+	.sidebar-alt #sub-content						{margin-left:10px;margin-right:10px;margin-bottom:15px;}
+	.content-wrapper								{padding:15px;}
+	#footer											{width:320px;float:left;}
+	
+	#branding {width: 300px;text-align: center;margin-bottom:10px;}
+	#logo {float: none;}
+	
+/* Main Class */
+	.container										{position:relative; width:300px; margin: 0 auto; padding: 0;}
+
+/* Sizes */
+	.container .two-hundred.grids,
+	.container .five-twenty.grids,
+	.container .seven-forty.grids,
+	.container .four-forty-two.grids				{width: 300px;}
+
+/* Menus */
+	/* Main Menu */
+	#main-menu ul#menu-main-menu li							{width:145px;margin:5px 0px;}
+	#main-menu ul#menu-main-menu li ul.sub-menu li			{width:145px;margin:0px;margin-left: 1px;}
+	#main-menu ul#menu-main-menu li.about-us, 
+	#main-menu ul#menu-main-menu li.strategy,
+	#main-menu ul#menu-main-menu li.news {margin-right: 5px!important;}
+	#main-menu ul#menu-main-menu li.people, 
+	#main-menu ul#menu-main-menu li.investments,
+	#main-menu ul#menu-main-menu li.contact-us {margin-left: 5px!important;}
+	
+	/* Top Menu */
+	#top-menu ul#menu-top-menu li.view-background-photo	{display:none;}
+	
+	/* Middle Menu */
+	#middle-menu {margin-right:0px;float: none;width: 300px;text-align: center;}
+	#middle-menu ul#menu-middle-menu li {float: none;margin: 0px 5px;display: inline-block;}
+	#middle-menu ul#menu-middle-menu li.firm-overview-pdf a:hover,
+	#middle-menu ul#menu-middle-menu li.partners-area a:hover {background-position:0px -17px;}
+	#middle-menu ul#menu-middle-menu li.partners-area a {width:78px;height:17px;background-size:78px 34px;}
+	#middle-menu ul#menu-middle-menu li.firm-overview-pdf a {width:99px;height:17px;background-size:99px 34px;}
+	
+	/* Sidebar */
+	.sidebar-container .sidebar-wrapper ul.menu 			{width:280px;margin:0px 10px;padding-bottom:0px;height:40px;}
+	#media-sidebar .sidebar-inner .textwidget ul li	{margin:5px 0px;word-wrap:break-word;}
+	.testimonial-gallery-quote {font-size:12px;line-height:16px;text-indent:inherit;float:left;}
+	#media-sidebar {margin-top:0px!important;margin-bottom:10px;}
+	
+	/* Investment Menus */	
+	ul#menu-portfolio li.portfolio					{width:280px;}
+	ul#menu-portfolio li.case-studies, 
+	ul#menu-portfolio li.testimonials,
+	.sidebar-container ul#menu-investment li		{width:117px;padding:6px;}
+	a.team-thumbnail img							{width: 135px;height: auto;}
+	ul#menu-portfolio li.portfolio					{margin-left:0px;margin-right:0px;}
+	
+	.page-case-studies ul#menu-investment,
+	.page-testimonials ul#menu-investment,
+	.single-casestudies ul#menu-investment {margin:0px 5px;width:410px;height:150px;}
+	
+	.page-case-studies ul#menu-investment li,
+	.page-testimonials ul#menu-investment li,
+	.single-casestudies ul#menu-investment li {width:260px;float:left;margin:5px;padding:8px;}
+	
+	ul#menu-portfolio li {font-size:12px;line-height:16px;text-indent:inherit;float:left;}
+	ul#menu-portfolio li a {padding:3px 5px;}
+	#menu-portfolio {height:218px;}
+	ul#menu-portfolio li.portfolio ul.sub-menu li,
+	ul#menu-portfolio li.portfolio ul.sub-menu li.by-industry ul.sub-menu li	{text-indent:inherit;}
+	#left-column #case-studies-sidebar, 
+	#left-column #testimonials-sidebar, 
+	#left-column #portfolio-sidebar {margin-top:10px!important;}
+	ul#menu-portfolio li.testimonials {margin-left: 10px;}
+	ul#menu-portfolio li.case-studies {margin-right: 10px;}
+	ul#menu-portfolio li.portfolio ul.sub-menu li.by-industry ul.sub-menu {margin:0px;}
+	
+	/* Strategy Menu */
+	ul#menu-strategy li 							{text-indent:inherit;float:left;margin:2px;}
+	ul#menu-strategy li a							{padding:3px 5px;}
+	.sidebar-container ul#menu-strategy				{height:60px;}
+	#strategy-sidebar								{margin-top:10px!important;}
+	
+	/* News Menu */
+	ul#menu-recent-releases li.recent-releases, 
+	ul#menu-news li.recent-releases, 
+	ul#menu-news li.archive-recent-releases,
+	ul#menu-news li.archive-archive, 
+	ul#menu-news li.archive,
+	.archive-recent-releases {font-size:12px;line-height:16px;text-indent:inherit;float:left;}
+	ul#menu-news li	{text-indent:inherit;float:left;margin:0px 5px;}
+	ul#menu-news li.archive-recent-releases a, 
+	ul#menu-news li.recent-releases a, 
+	ul#menu-news li.archive-archive a, 
+	ul#menu-news li.archive a, 
+	ul#menu-recent-releases li.archive-recent-releases a, 
+	ul#menu-recent-releases li.recent-releases a {padding:3px 5px;}
+	ul#menu-news li a, 
+	ul#menu-recent-releases li a {padding:3px;}
+	ul#menu-recent-releases li.archive-recent-releases a {padding:3px 5px;}
+	.archive-recent-releases {text-indent:inherit;}
+	.sidebar-container ul#menu-recent-releases {margin-bottom: 10px;}
+	releases li.recent-releases, 
+	ul#menu-news li.recent-releases, 
+	ul#menu-news li.archive-recent-releases, 
+	ul#menu-news li.archive-archive, 
+	ul#menu-news li.archive {text-indent: inherit;margin:0px 5px;}
+	.page-recent-releases .sidebar-container ul#menu-recent-releases {margin-bottom:10px;}
+	
+	/* People Menus */
+	.page-operations-team ul#menu-investment-team,
+	.page-investment-team ul#menu-operations-team			{height:40px;}
+	ul#menu-investment-team li.investment-team, 
+	ul#menu-operations-team li.operations-team				{margin-bottom:0px;}
+	.menu-investment-team-container							{margin-bottom:10px;}
+	.page-operations-team .menu-investment-team-container,
+	.page-investment-team .menu-operations-team-container	{height:40px;margin-bottom:10px;}
+	#menu-investment-team,							
+	.menu-investment-team-container							{height:275px;}
+	#menu-operations-team,
+	.menu-operations-team-container							{height:235px;}
+	.single-investment .menu-operations-team-container, 
+	.single-investment #menu-operations-team 				{height: 40px;}
+	.single-operations .menu-investment-team-container, 
+	.single-operations #menu-investment-team 				{height: 40px;margin-bottom:10px;}
+	.page-investment-team .menu-investment-team-container	{height:275px;margin-bottom:10px;}
+	.page-operactions-team .menu-operations-team-container	{height:230px;}
+	li.investment-team,
+	li.operations-team 										{width: 230px;}
+	.page-investment-team ul#menu-operations-team			{height:40px;}
+	ul#menu-investment-team li.investment-team,
+	ul#menu-operations-team li.operations-team,
+	ul#menu-investment-team li, 
+	ul#menu-operations-team li {
+		width:134px;
+		font-size:12px;
+		line-height:16px;
+		text-indent:inherit;
+		float:left;
+		margin:2px;
+		border:1px solid #ccc;
+	}
+	ul#menu-investment-team li.investment-team a,
+	ul#menu-operations-team li.operations-team a {padding:3px 5px;font-size:11px;line-height:15px;}
+	ul#menu-investment-team li a, 
+	ul#menu-operations-team li a {padding:3px 5px;font-size:10px;line-height:10px!important;}
+	ul#menu-investment-team li.investment-team, 
+	ul#menu-operations-team li.operations-team {width:100%;margin: 0px;border:0;}
+	
+/* Other Elements */
+	/* Galleries */
+	#mini-gallery,
+	#mini-gallery .wrapper,
+	.testimonial-mini-item,
+	#more-testimonials				{width:280px;}
+	.portfolio-mini-gallery img.mini-gallery-image	{width:268px;height:auto;}
+	#portfolio-slider								{width:0px;display:none!important;}
+	.company-slide									{width:92px;}
+	.portfolio-details								{width:270px;margin-left:0px;margin-top:20px;}
+	.case-studies-content-wrapper					{width:270px;margin:10px 0px 0px 0px;}
+	.right-column									{width:250px;}
+	.portfolio-image,
+	.portfolio-image img							{width:268px;height:auto;margin-right:0px;}
+	.portfolio-mini-gallery							{height:420px;}
+	#testimonial-gallery,
+	.gallery-wrapper,
+	.testimonial-gallery-image						{width:270px;}
+	#testimonial-gallery							{height:183px;}
+	.testimonial-item .entry-content,
+	.testimonial-content-wrapper					{width:270px;margin-left:0px;}
+	.testimonial-mini-item .testimonial-title,
+	.testimonial-mini-item .testimonial-credentials, 
+	.testimonial-mini-item .testimonials-company	{width:auto;}
+	#testimonial-gallery .testimonial-title,
+	.testimonial-gallery-info span,
+	.testimonial-gallery-info span	{font-size:11px;line-height:15px;}
+	.testimonial-gallery-content-wrapper {width:240px;}
+	#portfolio-gallery {width: 260px;margin-bottom:0px!important;min-height:inherit;}
+	#mini-gallery {height:180px;}
+	#mini-gallery .wrapper,
+	.testimonial-mini-item	{min-height:150px;}
+	.testimonial-mini-gallery-content-wrapper {margin:10px 0px 0px 0px;}
+	.portfolio-thumbnail {width: 120px;	height: auto;}
+	#testimonial-clients .testimonial-item {margin: 10px 0px;}
+	
+	/* Sidebars */
+	#team-sidebar, 
+	#news-sidebar									{margin-top:10px!important;}
+	#sidebar-header {font-size:18px;padding:10px;}
+	#testimonials-sidebar {margin-top:0px;margin-bottom:10px;}
+	#right-column.sidebar	{margin-left:0px;}
+	.sidebar-alt #sub-content {margin-left:0px;margin-right:0px;margin-top:10px;}
+	
+	/* Containers */
+	#case-studies-container,
+	#testimonials-container							{width: 270px;height:210px;margin-right:0px;margin-left:0px;}
+	.two-column,
+	.two-column img {width:270px;margin-left:0px;}
+	.left-column {width:190px;}
+	#case-studies-article .thumb img {width:190px; height:auto;}
+	#welcome-box {width:240px;	margin:0 auto;}
+	
+	/* Portfolio */
+	.portfolio-top {margin-bottom:10px;}
+	.portfolio-bottom {margin-top:0px;}
+	.portfolio-info-item {}
+	.portfolio-details-item.last {border-bottom:1px dashed #ccc;}
+	
+	
+	/* People */
+	#portrate-image {margin-bottom: 10px;margin-right:0px;text-align:center;}
+	#member-info {margin-left: 0px;}
+	
+	a.anniversary-button {position: relative;float: left;margin: 10px;height: auto;}
+	a.anniversary-button img {width: 100px;height: auto;}
+	
+}
