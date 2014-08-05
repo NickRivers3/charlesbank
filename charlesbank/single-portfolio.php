@@ -87,7 +87,7 @@
 											<span><?php the_field('locations'); ?></span>
 										</div>
 								<?php }
-									if (get_field('charlesbank_team') !='') { ?>
+									if (get_field('charlesbank_team') != null ) { ?>
 										<div class="portfolio-info-item">
 											<h4 class="portfolio-section inline">Charlesbank Team:</h5>
 											<?php $post_objects = get_field('charlesbank_team');

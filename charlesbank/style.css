@@ -282,13 +282,26 @@ span.edit-link a:hover {
 	min-height: 120px;
 }
 .other-contacts {
-padding: 10px;
-font-size: 12px!important;
-border-top: 1px solid #a1c3cc;
+	font-size: 12px!important;
+	border-left: 1px solid #a1c3cc;
+	border-right: 1px solid #a1c3cc;
+	border-bottom: 1px solid #a1c3cc;
 }
 .other-contacts p {
-text-transform: uppercase;
-padding-bottom: 10px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #a1c3cc;
+	border-top: 1px solid #a1c3cc;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #666;
+	padding: 10px;
+	letter-spacing: 1px;
+	font-weight:bold;
+}
+.other-contacts ul {
+	list-style:none;
+	padding: 10px 10px 10px 30px;
 }
 #media-sidebar .sidebar-inner .textwidget ul {
 	margin-top:10px;
