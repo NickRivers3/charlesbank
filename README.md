@@ -1,2 +1,4 @@
-charlesbank
+Charlesbank
 ===========
+
+Responsive Wordpress Theme.
